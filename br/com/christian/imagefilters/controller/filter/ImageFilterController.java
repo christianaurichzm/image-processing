@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import br.com.christian.imagefilters.controller.storage.ImageStorage;
 
 public class ImageFilterController {
-	private final ImageStorage imageStorage = ImageStorage.getInstance();
+    private final ImageStorage imageStorage = ImageStorage.getInstance();
 
 	private static ImageFilterController imageFilterController;
     

@@ -29,7 +29,7 @@ public class ImageStorage {
         try {
             f = new File(this.path.toString());
             img = ImageIO.read(f);
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return img;
@@ -42,7 +42,7 @@ public class ImageStorage {
             f = new File(IMAGE_DIRECTORY_PATH + filenameWithoutFormat + "-filtered." + fileFormat);
             img = image;
             ImageIO.write(img, fileFormat, f);
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -1,13 +1,12 @@
 package br.com.christian.imagefilters.controller.filter;
 
-import java.awt.image.BufferedImage;
-
 import br.com.christian.imagefilters.controller.storage.ImageStorage;
 
-public class ImageFilterController {
-    private final ImageStorage imageStorage = ImageStorage.getInstance();
+import java.awt.image.BufferedImage;
 
+public class ImageFilterController {
     private static ImageFilterController imageFilterController;
+    private final ImageStorage imageStorage = ImageStorage.getInstance();
 
     public static ImageFilterController getInstance() {
         if (imageFilterController == null) {
@@ -29,5 +28,4 @@ public class ImageFilterController {
         }
         imageStorage.saveImage(image);
     }
-
 }

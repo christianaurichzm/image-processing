@@ -1,14 +1,14 @@
 package br.com.christian.imagefilters.view;
 
-import java.util.Scanner;
-
 import br.com.christian.imagefilters.controller.filter.GrayscaleFilter;
 import br.com.christian.imagefilters.controller.filter.ImageFilter;
 import br.com.christian.imagefilters.controller.filter.ImageFilterController;
 import br.com.christian.imagefilters.controller.filter.NegativeFilter;
 
+import java.util.Scanner;
+
 public class FilterMenuView {
-    private Scanner sc;
+    private final Scanner sc;
     private ImageFilter imageFilter;
 
     public FilterMenuView() {

@@ -2,19 +2,18 @@ package br.com.christian.imagefilters.controller.storage;
 
 import br.com.christian.imagefilters.utils.FilenameUtils;
 
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import javax.imageio.ImageIO;
-
 public class ImageStorage {
     private static ImageStorage imageStorage;
+    private final String IMAGE_DIRECTORY_PATH = "br/com/christian/imagefilters/images/";
     private BufferedImage img = null;
     private File f = null;
-    private final String IMAGE_DIRECTORY_PATH = "br/com/christian/imagefilters/images/";
     private Path path;
 
     public static ImageStorage getInstance() {

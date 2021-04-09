@@ -26,6 +26,6 @@ public class ImageFilterController {
                 image.setRGB(x, y, imageFilter.filterRGB(x, y, p));
             }
         }
-        imageStorage.saveImage(image);
+        this.imageStorage.saveImage(image);
     }
 }

@@ -24,7 +24,7 @@ public class ImageFilterController {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 int p = image.getRGB(x, y);
-                image.setRGB(x, y, imageFilter.filterARGB(x, y, p));
+                image.setRGB(x, y, imageFilter.filterRGB(x, y, p));
             }
         }
         imageStorage.saveImage(image);
